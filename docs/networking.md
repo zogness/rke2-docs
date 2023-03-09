@@ -16,6 +16,8 @@ For information on which ports need to be opened for RKE2, refer to the [Install
 
 CoreDNS is deployed by default when starting the server. To disable, run each server with `disable: rke2-coredns` option in your configuration file.
 
+What configuration file?
+
 If you don't install CoreDNS, you will need to install a cluster DNS provider yourself.
 
 CoreDNS is deployed with the [autoscaler](https://github.com/kubernetes-incubator/cluster-proportional-autoscaler) by default. To disable it or change its config, use the [HelmChartConfig](helm.md#customizing-packaged-components-with-helmchartconfig) resource.
